@@ -1,0 +1,342 @@
+//@font-face {
+//  font-family: 'Open Sans';
+//  font-style: normal;
+//  font-weight: 400;
+//  src: url("../font/cJZKeOuBrn4kERxqtaUH3fY6323mHUZFJMgTvxaG2iE.eot");
+//  src: local('Open Sans'), local('OpenSans'), url("../font/cJZKeOuBrn4kERxqtaUH3fY6323mHUZFJMgTvxaG2iE.eot") format('embedded-opentype'), url("../font/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff") format('woff');
+//}
+* {
+  padding: 0;
+  margin: 0;
+}
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Microsoft YaHei', sans-serif;
+}
+body{
+  position: relative;
+}
+h1 {
+  font-size: 48px;
+  line-height: 57px;
+  font-weight: 700;
+  padding-bottom: 8px;
+}
+h2 {
+  font-size: 36px;
+  line-height: 38px;
+  padding-bottom: 0px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0px;
+  border-bottom: #ef7674 6px solid;
+  padding-bottom: 9px;
+  display: inline-block;
+}
+
+h3 {
+  font-size: 18px;
+  line-height: 21px;
+  padding-bottom: 3px;
+  font-weight: 400;
+}
+h4 {
+  font-size: 19px;
+  line-height: 24px;
+  padding-bottom: 6px;
+  font-weight: 600;
+  margin: 0px;
+  color: #5b4c5c;
+}
+
+h5 {
+  font-size: 16px;
+  line-height: 24px;
+  padding-bottom: 6px;
+  font-weight: 400;
+}
+p {
+  font-size: 16px;
+  line-height: 27px;
+  font-weight: 400;
+  color: #897f8a;
+}
+
+
+//轮播图
+header .banner{
+  margin: 0;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  li{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-position: center;
+    background-size: cover;//持图像本身的宽高比例
+    overflow: hidden;
+    display: none;
+  }
+  .bannerText{
+    position: absolute;
+    top:35%;
+    left: 0;
+    right: 0;
+    color: #fff;
+    text-align: center;
+    p{
+      font-size: 18px;
+      color: #fff;
+    }
+  }
+}
+
+//导航
+nav.navbar{
+  background-color: #fff;
+  border-color:#fff;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 800;
+  margin-bottom: 0;
+  .nav-wrap{
+    margin: 0 auto;
+    .active{
+      a{
+        color: #ef7674;
+        background-color: #fff;
+        &:hover{
+          background-color: #fff;
+        }
+        &:focus{
+          color: #ef7674;
+          background-color: #fff;
+        }
+      }
+    }
+    a{
+      padding: 40px 30px;
+      &:hover{
+        color: #ef7674;
+      }
+    }
+  }
+}
+
+//关于我
+.aboutme{
+  background-color: #f3f2f3;
+  .container{
+    padding-top: 90px;
+    padding-bottom: 90px;
+    .aboutInfo{
+      max-width: 800px;
+      margin: 0 auto;
+      >div{
+        margin: 40px auto;
+        .img{
+          height: 100px;
+          width: 100px;
+          margin: 0 auto;
+          background-color: #ef7674;
+          //border: 3px solid #ef7674;
+          border-radius: 50%;
+          padding: 10px;
+          img{
+            width: 100%;
+          }
+        }
+        .text{
+          p{
+            color: #483c49;
+            margin-top: 15px;
+          }
+        }
+      }
+    }
+    .heading{
+      text-align: center;
+      padding-bottom: 26px;
+    }
+  }
+}
+
+//技能
+.skill{
+  .container{
+    padding-top: 90px;
+    padding-bottom: 90px;
+    .heading{
+      text-align: center;
+      padding-bottom: 45px;
+      p{
+        padding-top: 26px;
+      }
+    }
+  }
+}
+
+//经历
+.experience{
+  background-color: #f3f2f3;
+  .container{
+    padding-top: 90px;
+    padding-bottom: 90px;
+    .heading{
+      text-align: center;
+      padding-bottom: 45px;
+      p{
+        padding-top: 26px;
+        max-width: 800px;
+        text-align: justify;
+        display: block;
+        margin: 0 auto;
+        color: #897f8a;
+        line-height: 27px;
+      }
+    }
+    .workDetails{
+      .rightArea{
+        border-left: dashed 1px #897f8a;
+        padding-bottom: 47px;
+        .arrowpart{
+          margin-left: -26px;
+          margin-top: 32px;
+          float: left;
+          width: 22px;
+          height: 22px;
+          background: url(../images/arrow-left.png) no-repeat 0 0 #f8f7f8;
+        }
+        .exCon {
+          width: auto;
+          padding: 0 47px 6px 70px;
+          margin-left: 15px;
+          text-align: left;
+          p{
+            color: #897f8a;
+            line-height: 27px;
+          }
+          h4{
+            color: #5b4c5c;
+            padding-bottom: 1px;
+            margin-top: -8px;
+          }
+          h5 {
+            color: #5b4c5c;
+            padding-bottom: 11px;
+          }
+        }
+      }
+      .workYear{
+        font-size: 17px;
+        color: #fff;
+        line-height: 40px;
+        span{
+          display: block;
+          font-size: 18px;
+          padding: 0 21px;
+          white-space: nowrap;
+          float: right;
+          margin-bottom: 2px;
+          margin-right: 28px;
+          font-weight: bold;
+        }
+        .prevY {
+          background-color: #ef7674;
+        }
+
+        .afterY {
+          background-color: #483c49;
+        }
+      }
+    }
+    .workDetails:last-child .rightArea {
+      padding-bottom: 0px;
+      .exCon p:last-child{
+        padding-bottom: 0;
+      }
+    }
+  }
+}
+
+//项目
+.items{
+  .container{
+    padding-top: 90px;
+    padding-bottom: 90px;
+    .heading{
+      text-align: center;
+      padding-bottom: 45px;
+      p{
+        padding-top: 26px;
+      }
+    }
+  }
+}
+
+//联系我
+.contact{
+  background-color: #f3f2f3;
+  .container{
+    padding-top: 90px;
+    padding-bottom: 90px;
+    .heading{
+      text-align: center;
+      padding-bottom: 25px;
+    }
+  }
+}
+
+//footer
+footer{
+  height: 100px;
+  background-color: #263238;
+}
+
+
+
+
+//媒体查询
+@media (max-width: 768px) {
+  nav.navbar{
+    .nav-wrap{
+      a{
+        padding: 20px;
+      }
+    }
+  }
+
+  #experience{
+    .workDetails{
+      .workYear {
+        margin: 0 auto 20px;
+        overflow: hidden;
+        span{
+          width: 100%;
+          margin-right: 0;
+        }
+      }
+      .rightArea {
+        border-left: none;
+        .arrowpart{
+          background: none;
+        }
+      .exCon{
+        margin-left: 0px;
+        padding: 0;
+      }
+      }
+    }
+
+  }
+
+}

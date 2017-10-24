@@ -1,0 +1,288 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Microsoft YaHei', sans-serif;
+}
+body {
+  position: relative;
+}
+h1 {
+  font-size: 48px;
+  line-height: 57px;
+  font-weight: 700;
+  padding-bottom: 8px;
+}
+h2 {
+  font-size: 36px;
+  line-height: 38px;
+  padding-bottom: 0px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0px;
+  border-bottom: #ef7674 6px solid;
+  padding-bottom: 9px;
+  display: inline-block;
+}
+h3 {
+  font-size: 18px;
+  line-height: 21px;
+  padding-bottom: 3px;
+  font-weight: 400;
+}
+h4 {
+  font-size: 19px;
+  line-height: 24px;
+  padding-bottom: 6px;
+  font-weight: 600;
+  margin: 0px;
+  color: #5b4c5c;
+}
+h5 {
+  font-size: 16px;
+  line-height: 24px;
+  padding-bottom: 6px;
+  font-weight: 400;
+}
+p {
+  font-size: 16px;
+  line-height: 27px;
+  font-weight: 400;
+  color: #897f8a;
+}
+header .banner {
+  margin: 0;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+header .banner li {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  display: none;
+}
+header .banner .bannerText {
+  position: absolute;
+  top: 35%;
+  left: 0;
+  right: 0;
+  color: #fff;
+  text-align: center;
+}
+header .banner .bannerText p {
+  font-size: 18px;
+  color: #fff;
+}
+nav.navbar {
+  background-color: #fff;
+  border-color: #fff;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 800;
+  margin-bottom: 0;
+}
+nav.navbar .nav-wrap {
+  margin: 0 auto;
+}
+nav.navbar .nav-wrap .active a {
+  color: #ef7674;
+  background-color: #fff;
+}
+nav.navbar .nav-wrap .active a:hover {
+  background-color: #fff;
+}
+nav.navbar .nav-wrap .active a:focus {
+  color: #ef7674;
+  background-color: #fff;
+}
+nav.navbar .nav-wrap a {
+  padding: 40px 30px;
+}
+nav.navbar .nav-wrap a:hover {
+  color: #ef7674;
+}
+.aboutme {
+  background-color: #f3f2f3;
+}
+.aboutme .container {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+.aboutme .container .aboutInfo {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.aboutme .container .aboutInfo > div {
+  margin: 40px auto;
+}
+.aboutme .container .aboutInfo > div .img {
+  height: 100px;
+  width: 100px;
+  margin: 0 auto;
+  background-color: #ef7674;
+  border-radius: 50%;
+  padding: 10px;
+}
+.aboutme .container .aboutInfo > div .img img {
+  width: 100%;
+}
+.aboutme .container .aboutInfo > div .text p {
+  color: #483c49;
+  margin-top: 15px;
+}
+.aboutme .container .heading {
+  text-align: center;
+  padding-bottom: 26px;
+}
+.skill .container {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+.skill .container .heading {
+  text-align: center;
+  padding-bottom: 45px;
+}
+.skill .container .heading p {
+  padding-top: 26px;
+}
+.experience {
+  background-color: #f3f2f3;
+}
+.experience .container {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+.experience .container .heading {
+  text-align: center;
+  padding-bottom: 45px;
+}
+.experience .container .heading p {
+  padding-top: 26px;
+  max-width: 800px;
+  text-align: justify;
+  display: block;
+  margin: 0 auto;
+  color: #897f8a;
+  line-height: 27px;
+}
+.experience .container .workDetails .rightArea {
+  border-left: dashed 1px #897f8a;
+  padding-bottom: 47px;
+}
+.experience .container .workDetails .rightArea .arrowpart {
+  margin-left: -26px;
+  margin-top: 32px;
+  float: left;
+  width: 22px;
+  height: 22px;
+  background: url(../images/arrow-left.png) no-repeat 0 0 #f8f7f8;
+}
+.experience .container .workDetails .rightArea .exCon {
+  width: auto;
+  padding: 0 47px 6px 70px;
+  margin-left: 15px;
+  text-align: left;
+}
+.experience .container .workDetails .rightArea .exCon p {
+  color: #897f8a;
+  line-height: 27px;
+}
+.experience .container .workDetails .rightArea .exCon h4 {
+  color: #5b4c5c;
+  padding-bottom: 1px;
+  margin-top: -8px;
+}
+.experience .container .workDetails .rightArea .exCon h5 {
+  color: #5b4c5c;
+  padding-bottom: 11px;
+}
+.experience .container .workDetails .workYear {
+  font-size: 17px;
+  color: #fff;
+  line-height: 40px;
+}
+.experience .container .workDetails .workYear span {
+  display: block;
+  font-size: 18px;
+  padding: 0 21px;
+  white-space: nowrap;
+  float: right;
+  margin-bottom: 2px;
+  margin-right: 28px;
+  font-weight: bold;
+}
+.experience .container .workDetails .workYear .prevY {
+  background-color: #ef7674;
+}
+.experience .container .workDetails .workYear .afterY {
+  background-color: #483c49;
+}
+.experience .container .workDetails:last-child .rightArea {
+  padding-bottom: 0px;
+}
+.experience .container .workDetails:last-child .rightArea .exCon p:last-child {
+  padding-bottom: 0;
+}
+.items .container {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+.items .container .heading {
+  text-align: center;
+  padding-bottom: 45px;
+}
+.items .container .heading p {
+  padding-top: 26px;
+}
+.contact {
+  background-color: #f3f2f3;
+}
+.contact .container {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+.contact .container .heading {
+  text-align: center;
+  padding-bottom: 25px;
+}
+footer {
+  height: 100px;
+  background-color: #263238;
+}
+@media (max-width: 768px) {
+  nav.navbar .nav-wrap a {
+    padding: 20px;
+  }
+  #experience .workDetails .workYear {
+    margin: 0 auto 20px;
+    overflow: hidden;
+  }
+  #experience .workDetails .workYear span {
+    width: 100%;
+    margin-right: 0;
+  }
+  #experience .workDetails .rightArea {
+    border-left: none;
+  }
+  #experience .workDetails .rightArea .arrowpart {
+    background: none;
+  }
+  #experience .workDetails .rightArea .exCon {
+    margin-left: 0px;
+    padding: 0;
+  }
+}
